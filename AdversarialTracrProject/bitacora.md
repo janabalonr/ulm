@@ -13,5 +13,6 @@
 
 ## Notas
 
+-Cometí un error al crear el workspace, me trajo anc y cryptography, pero esas son otras carpetas de codigo que no deben estar aquí. Las sacaré luego. Necesito documentarme para no romper nada d enuevo.
 - El repositorio Git detecta el directorio `AdversarialTracrProject` como un nuevo conjunto de archivos no rastreados.
-- Este commit incluirá tanto el código actualizado como el archivo de bitácora.
+- Este commit incluye tanto el código actualizado como el archivo de bitácora.
