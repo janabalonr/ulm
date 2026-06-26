@@ -2,7 +2,7 @@
 
 ## Actividades realizadas
 
-- Convertido el módulo de Alice a PyTorch en `src/alice.py`.
+- Crea módulo de Alice en PyTorch en `src/alice.py`.
 - Ajustada la arquitectura para seguir la versión original de Abadi & Andersen (2016):
   - Entrada: concatenación mensaje + clave → vector `2N`.
   - Capa fully connected de tamaño `2N × 2N`.
