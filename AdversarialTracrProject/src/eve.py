@@ -3,7 +3,7 @@ import torch.nn as nn
 
 
 class EveNet(nn.Module):
-    """Eve eavesdropper used in Abadi-style adversarial neural cryptography."""
+    """Eve eavesdropper usado en Abadi-style adversarial neural cryptography."""
 
     def __init__(self, msg_length: int):
         super().__init__()

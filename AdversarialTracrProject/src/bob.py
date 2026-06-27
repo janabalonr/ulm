@@ -3,7 +3,7 @@ import torch.nn as nn
 
 
 class BobNet(nn.Module):
-    """Bob decoder used in Abadi-style adversarial neural cryptography."""
+    """Bob decoder usado en Abadi-style adversarial neural cryptography."""
 
     def __init__(self, msg_length: int):
         super().__init__()

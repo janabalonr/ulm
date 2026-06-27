@@ -10,7 +10,7 @@ except ImportError:  # pragma: no cover - allows running the script directly
 
 
 class AliceNet(nn.Module):
-    """Alice network for adversarial neural cryptography (Abadi-style)."""
+    """Alice network para adversarial neural cryptography (Abadi-style)."""
 
     def __init__(self, msg_length: int):
         super().__init__()
@@ -42,14 +42,14 @@ class AliceNet(nn.Module):
 
 
 def explicit_xor_cipher(msg: torch.Tensor, key: torch.Tensor) -> torch.Tensor:
-    """Return the explicit bitwise XOR cipher for comparison with the learned ANC cipher."""
+    """Devuelve el cifrado explícito de XOR bit a bit para compararlo con el cifrado ANC aprendido."""
     if msg.shape != key.shape:
         raise ValueError(f"msg and key must have the same shape, got {msg.shape} and {key.shape}")
     return torch.logical_xor(msg.bool(), key.bool()).float()
 
 
 def compare_ciphertext_to_xor(ciphertext: torch.Tensor, msg: torch.Tensor, key: torch.Tensor) -> tuple[float, float]:
-    """Compare the learned ANC ciphertext to the explicit XOR reference."""
+    """Compara el texto cifrado ANC aprendido con la referencia explícita de XOR"""
     xor_target = explicit_xor_cipher(msg, key)
     binary_cipher = (ciphertext >= 0.5).float()
     match_rate = ((binary_cipher == xor_target).float().mean().item())

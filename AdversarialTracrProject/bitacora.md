@@ -16,3 +16,7 @@
 -Cometí un error al crear el workspace, me trajo anc y cryptography, pero esas son otras carpetas de codigo que no deben estar aquí. Las sacaré luego. Necesito documentarme para no romper nada d enuevo.
 - El repositorio Git detecta el directorio `AdversarialTracrProject` como un nuevo conjunto de archivos no rastreados.
 - Este commit incluye tanto el código actualizado como el archivo de bitácora.
+
+27-06-26 he recreado lo más fiel posible la arquitectura de Abadi & Andersen (2016) en PyTorch, ajustando las capas convolucionales y el padding para mantener la reducción de tamaño intencional. El script `src/alice.py` ahora se ejecuta correctamente y produce la salida esperada. Para XAI necesito avanzar en la comprensión de los xor para luego pasar a programar el resultado de eve en tracr, pero aún no he llegado a esa etapa.
+Debo terminar de leer "think like a transformers".
+! idea, buscaré alguna implementación RASP ya hecha en ggithub respecto de los xor, para ver si puedo usarla como referencia para mi implementación de Eve en Tracr.
