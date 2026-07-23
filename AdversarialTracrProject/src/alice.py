@@ -73,11 +73,11 @@ def train_anc(
     msg_length: int = 16,
     alpha: float = 1.0,
     beta: float = 0.5,
-    eve_updates_per_round: int = 2,
+    eve_updates_per_round: int = 6,
     log_every: int = 1000,
     epochs: int | None = None,
     batch_size: int | None = None,
-) -> None:
+) -> list[dict[str, float]]:
     if epochs is not None:
         train_steps = epochs
     if batch_size is not None:
@@ -87,6 +87,7 @@ def train_anc(
     optimizer_bob = torch.optim.Adam(bob.parameters(), lr=lr)
     optimizer_eve = torch.optim.Adam(eve.parameters(), lr=lr)
     bce = nn.BCELoss()
+    history: list[dict[str, float]] = []
 
     for step in range(1, train_steps + 1):
         msg, key = generate_data(minibatch_size, msg_length)
@@ -132,10 +133,21 @@ def train_anc(
             bob_acc = ((bob_pred_eval > 0.5).float() == msg_eval).float().mean().item()
             eve_acc = ((eve_pred_eval > 0.5).float() == msg_eval).float().mean().item()
             xor_match, xor_error = compare_ciphertext_to_xor(ciphertext_eval, msg_eval, key_eval)
+            history.append(
+                {
+                    "step": step,
+                    "bob_acc": bob_acc,
+                    "eve_acc": eve_acc,
+                    "xor_match": xor_match,
+                    "xor_error": xor_error,
+                }
+            )
             print(
                 f"Step {step}/{train_steps} - bob_acc={bob_acc:.3f} "
                 f"eve_acc={eve_acc:.3f} xor_match={xor_match:.3f} xor_error={xor_error:.3f}"
             )
+
+    return history
 
 
 if __name__ == "__main__":
