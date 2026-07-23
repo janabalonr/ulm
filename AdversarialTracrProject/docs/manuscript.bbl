@@ -1,0 +1,133 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{8}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Abadi and Andersen(2016)]%
+        {abadi2016learning}
+\bibfield{author}{\bibinfo{person}{Mart{\'i}n Abadi} {and}
+  \bibinfo{person}{David~G. Andersen}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Learning to Protect Communications with Adversarial
+  Neural Cryptography}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1610.06918}}
+  (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[Alain and Bengio(2016)]%
+        {alain2016understanding}
+\bibfield{author}{\bibinfo{person}{Guillaume Alain} {and}
+  \bibinfo{person}{Yoshua Bengio}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Understanding Intermediate Layers Using Linear
+  Classifier Probes}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1610.01644}}
+  (\bibinfo{year}{2016}).
+\newblock
+
+
+\bibitem[Kingma and Ba(2015)]%
+        {kingma2015adam}
+\bibfield{author}{\bibinfo{person}{Diederik~P. Kingma} {and}
+  \bibinfo{person}{Jimmy Ba}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Adam: A Method for Stochastic Optimization}. In
+  \bibinfo{booktitle}{\emph{International Conference on Learning
+  Representations (ICLR)}}.
+\newblock
+
+
+\bibitem[Lindner et~al\mbox{.}(2023)]%
+        {lindner2023tracr}
+\bibfield{author}{\bibinfo{person}{David Lindner}, \bibinfo{person}{J{\'a}nos
+  Kram{\'a}r}, \bibinfo{person}{Sebastian Farquhar}, \bibinfo{person}{Matthew
+  Rahtz}, \bibinfo{person}{Thomas McGrath}, {and} \bibinfo{person}{Vladimir
+  Mikulik}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Tracr: Compiled Transformers as a Laboratory for
+  Interpretability}. In \bibinfo{booktitle}{\emph{Advances in Neural
+  Information Processing Systems (NeurIPS)}}.
+\newblock
+\newblock
+\shownote{arXiv:2301.05062}.
+
+
+\bibitem[Minsky and Papert(1969)]%
+        {minsky1969perceptrons}
+\bibfield{author}{\bibinfo{person}{Marvin Minsky} {and}
+  \bibinfo{person}{Seymour Papert}.} \bibinfo{year}{1969}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Perceptrons: An Introduction to
+  Computational Geometry}}.
+\newblock \bibinfo{publisher}{MIT Press}.
+\newblock
+
+
+\bibitem[Olah(2022)]%
+        {olah2022mechanistic}
+\bibfield{author}{\bibinfo{person}{Chris Olah}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Mechanistic Interpretability, Variables, and the
+  Importance of Interpretable Bases}.
+\newblock \bibinfo{howpublished}{Transformer Circuits Thread}.
+\newblock
+\urldef\tempurl%
+\url{https://transformer-circuits.pub/2022/mech-interp-essay}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Olah et~al\mbox{.}(2020)]%
+        {olah2020zoom}
+\bibfield{author}{\bibinfo{person}{Chris Olah}, \bibinfo{person}{Nick
+  Cammarata}, \bibinfo{person}{Ludwig Schubert}, \bibinfo{person}{Gabriel Goh},
+  \bibinfo{person}{Michael Petrov}, {and} \bibinfo{person}{Shan Carter}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Zoom In: An Introduction to Circuits}.
+\newblock \bibinfo{journal}{\emph{Distill}} (\bibinfo{year}{2020}).
+\newblock
+\href{https://doi.org/10.23915/distill.00024.001}{doi:\nolinkurl{10.23915/distill.00024.001}}
+
+
+\bibitem[Weiss et~al\mbox{.}(2021)]%
+        {weiss2021thinking}
+\bibfield{author}{\bibinfo{person}{Gail Weiss}, \bibinfo{person}{Yoav
+  Goldberg}, {and} \bibinfo{person}{Eran Yahav}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Thinking Like Transformers}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 38th International Conference on
+  Machine Learning (ICML)}} \emph{(\bibinfo{series}{Proceedings of Machine
+  Learning Research}, Vol.~\bibinfo{volume}{139})}.
+\newblock
+
+
+\end{thebibliography}
